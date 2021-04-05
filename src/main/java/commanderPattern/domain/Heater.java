@@ -1,12 +1,20 @@
-package commanderPattern.domain;
+                    package commanderPattern.domain;
 
-public class Heater {
+                    public class Calculator {
 
-    public void turnOnHeater(){
-        System.out.println("Heater turnOn");
-    }
+                        public int calculate(String type, int operand1, int operand2){
 
-    public void turnOffHeater(){
-        System.out.println("Heater turnOff");
-    }
-}
+                                if(type="plus"){
+                                    return (operand1 + operand2);
+                                }
+                                if(type="minus"){
+                                    return (operand1 - operand2);
+                                }
+                                if(type="devide"){
+                                    return (operand1 / operand2);
+                                }
+                                if(type="multiple"){
+                                    return (operand1 * operand2);
+                                }
+                        }
+                    }
